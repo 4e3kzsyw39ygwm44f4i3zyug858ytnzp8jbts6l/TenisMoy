@@ -31,14 +31,14 @@ public class CodexDBF
                 fields.Add(new XField { name = "uidprod", defVal = TDefVals.cero, type = TFldType.integer, nulo = false, unique = true });
                 fields.Add(new XField { name = "uidtalla", defVal = TDefVals.cero, type = TFldType.integer, nulo = false });
                 fields.Add(new XField { name = "stock", defVal = TDefVals.cero, type = TFldType.integer, nulo = true });
-                fields.Add(new XField { name = "deleted", defVal = TDefVals.cero, type = TFldType.tinyint, nulo = false});
+                fields.Add(new XField { name = "deleted", defVal = TDefVals.cero, type = TFldType.tinyint, nulo = false });
                 break;
             default:
                 return CrsCore.ResponseError(CrsCore.SaveLog("GetStringTable no se encontro el tipo de tabla"));
         }
         if (string.IsNullOrEmpty(alias)) { return CrsCore.ResponseError(CrsCore.SaveLog("GetStringTable no alias")); }
         List<string> campos = new List<string>();
-        if (increment) { campos.Add(" uid int NOT NULL AUTO_INCREMENT UNIQUE");  }
+        if (increment) { campos.Add(" uid int NOT NULL AUTO_INCREMENT UNIQUE"); }
         foreach (XField item in fields) { campos.Add(BuildField(item)); }
         return new XResponse { response = "BEGIN;" + string.Format("CREATE TABLE {0} ({1});", alias, string.Join(",", campos)) + "COMMIT;" };
     }
@@ -54,7 +54,7 @@ public class CodexDBF
     }
     public enum TableCode
     {
-        Stk_Ax,Cat_Ax
+        Stk_Ax, Cat_Ax
     }
     public enum TFldType { varchar, bigint, datetime, tinyint, IDENTITY, integer, Decimal, Float }
     public class TDefVals

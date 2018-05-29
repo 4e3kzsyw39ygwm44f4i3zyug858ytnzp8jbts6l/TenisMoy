@@ -1,44 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Data;
 using System.Web;
+using MySql.Data.MySqlClient;
 using System.Web.UI.WebControls;
 using System.Web.UI;
-using MySql.Data.MySqlClient;
+using System.Data;
 
-/*
-*****************************
-* ver 1.0.0
-*****************************
-*/
 namespace CrsClass
 {
-    /*extructuras*/
-    /*public struct XProdInfo
-    {
-        public bool error;
-        public bool empty;
-        public string msgerr;
-        public int uid;
-        public string codprod;
-        public string nombre;
-        public decimal ultcosto;
-        public decimal l0;
-        public decimal l1;
-        public decimal l2;
-        public decimal l3;
-        public decimal l4;
-        public decimal l5;
-        public decimal l6;
-        public decimal l7;
-        public decimal l8;
-        public decimal l9;
-        public decimal l10;
-        public bool ltalla;
-        public string sku;
-        public string status;
-    }*/
     public class XtrCursor
     {
         public string response { get; set; }
@@ -91,7 +61,7 @@ namespace CrsClass
     {
         public static void Error(Label lb, Panel pn, string coderr, string msg = "")
         {
-            if (string.IsNullOrEmpty(msg)) { msg =Resources.Resources.ErrorGen; }
+            if (string.IsNullOrEmpty(msg)) { msg = Resources.Resources.ErrorGen; }
             lb.Text = msg + coderr;
             pn.CssClass = "container alert alert-danger col-lg-10 col-sm-12 col-md-12";
             pn.Visible = true;
@@ -191,7 +161,7 @@ namespace CrsClass
         public static string SaveLog(string msg)
         {
             string code = CrsUtil.RandString(6);
-            Leonora.XUserLoged usrlog = (Leonora.XUserLoged)HttpContext.Current.Session["_UserLoged"];
+            XUserLoged usrlog = (XUserLoged)HttpContext.Current.Session["_UserLoged"];
             if (usrlog.uid.Equals(0)) { usrlog.name = "no user"; }
             CrsData.TableInsert("log", new Dictionary<string, dynamic> { { "message", msg.Replace("'", "\"") }, { "codigo", code }, { "uiduser", usrlog.uid.ToString() }, { "username", usrlog.name } });
             return code;
