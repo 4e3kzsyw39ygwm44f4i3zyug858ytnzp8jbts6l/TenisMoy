@@ -1,4 +1,8 @@
-﻿function menumaker(options) {
+﻿$(function () {
+    $("#btncloseresp").click(function () { $("#divResponse").css("display", "none"); });
+});
+
+function menumaker(options) {
     var cssmenu = $("#cssmenu"),
       settings = $.extend(
         {

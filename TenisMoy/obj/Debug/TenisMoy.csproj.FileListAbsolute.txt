@@ -18,3 +18,4 @@ C:\TenisMoy\TenisMoy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\TenisMoy\TenisMoy\obj\Debug\TenisMoy.csprojResolveAssemblyReference.cache
 C:\TenisMoy\TenisMoy\obj\Debug\TenisMoy.dll
 C:\TenisMoy\TenisMoy\obj\Debug\TenisMoy.pdb
+D:\STO\TenisMoy\TenisMoy\obj\Debug\TenisMoy.csprojResolveAssemblyReference.cache
