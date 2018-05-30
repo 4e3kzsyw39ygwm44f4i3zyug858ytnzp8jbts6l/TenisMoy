@@ -8,10 +8,10 @@ public class constantes
 {
     public const int limTallasInStkTallas = 18;//limi de tallas mostradas en el cuadro de stktallas
     public const string pathcarevi = "Provider=VFPOLEDB.1;Data Source=C:\\mc_pos\\data\\carevi.DBC;";
-    public const string uuser = "carlos";
-    public const string password = "Carlos3849";//usado en mysql localhost en mi pc
+    public const string uuser = "tenismoy";
+    public const string password = "uhTGQd6bd04r";
     public const string database = "tenismoy";
-    public const string server = "localhost";
+    public const string server = "carand.com.mx";
     public static List<string> prodSelCampos = new List<string> { "codprod", "nombre", "uid", "ultcosto" };//campos que usa la global de producto seleccionado 
     //las tallas debren coincidir con el numero de tallas en table y ambos list deben estar del mismo ancho y posocion
     public static List<string> tallasTabla = new List<string> { "_80", "_85", "_90", "_100", "_105", "_110", "_115", "_120", "_125", "_130", "_135", "_140", "_145", "_150", "_155", "_160", "_165", "_170", "_175", "_180", "_185", "_190", "_195", "_200", "_205", "_210", "_215", "_220", "_225", "_230", "_235", "_240", "_245", "_250", "_255", "_260", "_265", "_270", "_275", "_280", "_285", "_290", "_295", "_300", "_305", "_310", "_320", "_330", "_340" };//campos que usa la global de producto seleccionado 

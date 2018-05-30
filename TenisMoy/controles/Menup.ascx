@@ -20,7 +20,7 @@
             <li><a href="../AddProd.aspx">Alta Producto</a></li>
             <li><a href="../Familias.aspx">Familias</a>
                 <ul>
-                    <li><a href="../AddFam.aspx">Alta Familia</a></li>
+                    <li><a href="../AddFam.aspx">Alta</a></li>
                 </ul>
             </li>
         </ul>

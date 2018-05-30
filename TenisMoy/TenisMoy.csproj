@@ -71,7 +71,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddAlm.aspx" />
+    <Content Include="AddFam.aspx" />
+    <Content Include="AddProd.aspx" />
+    <Content Include="almacenes.aspx" />
     <Content Include="controles\Menup.ascx" />
+    <Content Include="EditFam.aspx" />
+    <Content Include="Familias.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -89,6 +95,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAlm.aspx.cs">
+      <DependentUpon>AddAlm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAlm.aspx.designer.cs">
+      <DependentUpon>AddAlm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddFam.aspx.cs">
+      <DependentUpon>AddFam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddFam.aspx.designer.cs">
+      <DependentUpon>AddFam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProd.aspx.cs">
+      <DependentUpon>AddProd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProd.aspx.designer.cs">
+      <DependentUpon>AddProd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="almacenes.aspx.cs">
+      <DependentUpon>almacenes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="almacenes.aspx.designer.cs">
+      <DependentUpon>almacenes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -103,6 +137,20 @@
       <DependentUpon>Menup.ascx</DependentUpon>
     </Compile>
     <Compile Include="CrsClass.cs" />
+    <Compile Include="EditFam.aspx.cs">
+      <DependentUpon>EditFam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditFam.aspx.designer.cs">
+      <DependentUpon>EditFam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Familias.aspx.cs">
+      <DependentUpon>Familias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Familias.aspx.designer.cs">
+      <DependentUpon>Familias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

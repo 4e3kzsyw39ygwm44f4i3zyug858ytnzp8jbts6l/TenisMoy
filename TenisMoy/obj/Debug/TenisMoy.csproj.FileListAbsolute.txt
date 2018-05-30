@@ -38,3 +38,4 @@ D:\STO\TenisMoy\TenisMoy\bin\MySql.Data.dll
 D:\STO\TenisMoy\TenisMoy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\STO\TenisMoy\TenisMoy\obj\Debug\TenisMoy.dll
 D:\STO\TenisMoy\TenisMoy\obj\Debug\TenisMoy.pdb
+D:\STO\TenisMoy\TenisMoy\obj\Debug\TenisMoy.csprojResolveAssemblyReference.cache
